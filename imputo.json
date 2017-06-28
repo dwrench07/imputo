@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "created_at": "2017-05-31 23:08:123",
+    "columns": ["column_1", "column_2"],
+    "dtypes": {
+      "float64": 4,
+      "int8": 16,
+      "object": 6
+    }
+  },
+  "fields": {
+    "column_1": {
+      "dtype": "float64",
+      "count": 3.0,
+      "mean": 2.0,
+      "std": 1.0,
+      "min": 1.0,
+      "25%": 1.5,
+      "50%": 2.0,
+      "75%": 2.5,
+      "max": 3.0,
+      "distribution": {
+        "name": "binom",
+        "mean": 0.0,
+        "var": 0.0,
+        "skew": 0.0,
+        "kurt": 0.0
+      },
+      "mock_params": {
+        "mock_type": "Binomial Distribution",
+        "mock_options": {
+          "p": 0.5,
+          "scenario": {}
+        }
+      },
+      "data": []
+    },
+    "column_2": {
+      "dtype": "object",
+      "count": 4,
+      "unique": 3,
+      "top": "a",
+      "freq": 2,
+      "distribution": {},
+      "params": {
+        "provider": "First Name",
+        "options": {
+          "scenario": {"column_1.value() > 1.5": "Do this..."}
+        }
+      },
+      "data": []
+    }
+  }
+}
